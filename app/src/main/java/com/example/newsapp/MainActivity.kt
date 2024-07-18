@@ -43,11 +43,10 @@ class MainActivity : AppCompatActivity(), Newsitemclicked {
                 adapter.updateNews(newsarray)
             },
             { error ->
-                // TODO: Handle error
+
             }
         )
 
-// Access the RequestQueue through your singleton class.
         MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest)
 
     }
